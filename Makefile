@@ -18,6 +18,6 @@ style.css:
 	# npx @tailwindcss/cli -i ./input.css -o ./docs/style.css --config tailwind.config.js
 	npx @tailwindcss/cli -i ./input.css -o ./docs/style.css
 
-%.html: %.md
+docs/index.html: index.md index.template.html
 	@echo "Converting $< to HTML..."
-	@pandoc $< -o $@  --template=index.template.html --standalone
+	@pandoc index.md -o docs/index.html  --template=index.template.html --standalone
