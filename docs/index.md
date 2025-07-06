@@ -1,4 +1,5 @@
-# Introduction to Probability Notebooks
+# Introduction to Probability
+## Notebooks
 
 Below is a list of all notebooks in this repository.
 

@@ -15,8 +15,9 @@ build-index: docs/index.html style.css
 	@echo "Building index page..."
 
 style.css:
+	# npx @tailwindcss/cli -i ./input.css -o ./docs/style.css --config tailwind.config.js
 	npx @tailwindcss/cli -i ./input.css -o ./docs/style.css
 
 %.html: %.md
 	@echo "Converting $< to HTML..."
-	@pandoc $< -o $@ --css=style.css --standalone
+	@pandoc $< -o $@  --template=index.template.html --standalone
