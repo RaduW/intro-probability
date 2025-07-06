@@ -7,3 +7,7 @@ or "npx @tailwindcss/cli -i ./input.css -o ./docs/sytle.css"
 */
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

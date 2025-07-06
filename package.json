@@ -1,10 +1,11 @@
 {
   "scripts": {
-  "build": "tailwindcss -i ./input.css -o ./docs/style.css",
-  "watch": "tailwindcss -i ./input.css -o ./docs/style.css --watch"
-},
-  "dependencies": {
+    "build": "tailwindcss -i ./input.css -o ./docs/style.css --config tailwind.config.js",
+    "watch": "tailwindcss -i ./input.css -o ./docs/style.css --config tailwind.config.js --watch"
+  },
+  "devDependencies": {
     "@tailwindcss/cli": "^4.1.11",
+    "@tailwindcss/typography": "^0.5.16",
     "tailwindcss": "^4.1.11"
   }
 }
