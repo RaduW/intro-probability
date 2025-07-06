@@ -17,4 +17,4 @@ build-index: docs/index.html
 
 %.html: %.md
 	@echo "Converting $< to HTML..."
-	@pandoc $< -o $@
+	@pandoc $< -o $@ --css=style.css --standalone
