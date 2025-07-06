@@ -17,4 +17,4 @@ build-index: docs/index.html
 
 %.html: %.md
 	@echo "Converting $< to HTML..."
-	@python3 -c "import markdown, sys; sys.stdout.write(markdown.markdown(open('$<').read()))" > $@
+	@pandoc $< -o $@
