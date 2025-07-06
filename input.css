@@ -1,0 +1,9 @@
+/*
+This file will be converted to style.css by Tailwind CSS.
+
+either run "npm run build"
+or "npx @tailwindcss/cli -i ./input.css -o ./docs/sytle.css"
+
+*/
+
+@import "tailwindcss";

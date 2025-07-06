@@ -11,9 +11,11 @@ build-site: build-index
 	@echo "Building static site..."
 	marimo export html-wasm gamblers_ruin.py -o docs/gamblers_ruin/index.html
 
-build-index: docs/index.html
+build-index: docs/index.html style.css
 	@echo "Building index page..."
 
+style.css:
+	npx @tailwindcss/cli -i ./input.css -o ./docs/style.css
 
 %.html: %.md
 	@echo "Converting $< to HTML..."
