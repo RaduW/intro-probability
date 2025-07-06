@@ -1,11 +1,8 @@
 .PHONY: all
-all: develop
+all: build-site
 
 PIP := python -m pip --disable-pip-version-check
 
-
-develop:
-	@echo "--> first task, this is a test"
 
 build-site: build-index
 	@echo "Building static site..."
